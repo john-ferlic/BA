@@ -29,7 +29,7 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("HELLO");
-		Login logincredentials = new Login();
+		Login logincredentials = new Login() ;
 		logincredentials.setUsername(request.getParameter("username"));
 		logincredentials.setPassword(request.getParameter("password"));
 
