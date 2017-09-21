@@ -71,7 +71,7 @@
 						<td><input type="text" name="state" required></td>
 					</tr>
 					<tr>
-						<td>Zip Code</td>
+						<td>ZIP Code</td>
 						<td><input type="text" name="zip" pattern="(\d{5}([\-]\d{4})?)"
 						 required></td>
 					</tr>
