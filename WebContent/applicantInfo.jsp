@@ -35,7 +35,7 @@
 	</head>
 	<body>
 		<div id="lblock">
-			<img src="C:\Users\644246\Desktop\bankaccount.png" alt="Bank Account"/>
+			<img src="https://goo.gl/AFKHhg" width="25%" height="25%" alt="Bank Account"/>
 		</div>
 		<div id="rblock"> 
 			<h1>Applicant Info</h1>
