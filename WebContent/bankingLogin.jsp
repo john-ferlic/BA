@@ -39,7 +39,7 @@
 				<!-- User login info -->
 				<table id="loginTable">
 					<tr>
-						<td>Username</td>
+						<td>User Name</td>
 						<td><input type="text" name="uname" required></td>
 					</tr>
 					<tr>
