@@ -9,6 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name> dispatcher </display-name>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class> org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>dispatchOptionsRequest</param-name>
+      <param-value> true</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>
     <url-pattern>/</url-pattern>
@@ -52,15 +63,5 @@
   <servlet-mapping>
     <servlet-name>IncomeController</servlet-name>
     <url-pattern>/IncomeController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>LoginController</display-name>
-    <servlet-name>LoginController</servlet-name>
-    <servlet-class>com.cg.bankaccount.LoginController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LoginController</servlet-name>
-    <url-pattern>/LoginController</url-pattern>
   </servlet-mapping>
 </web-app>
