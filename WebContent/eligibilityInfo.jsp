@@ -53,7 +53,7 @@
 					</tr>				
 					<tr>
 						<td>Initial Deposit</td>
-						<td><input type="text" name="initialDeposit" required></td>
+						<td><input type="number" name="initialDeposit" required></td>
 					</tr>
 					<tr>
 						<td>Direct Deposit of $500 min monthly</td>
@@ -85,7 +85,7 @@
 					</tr>
 					<tr>
 						<td>Rent Lease/Amount</td>
-						<td><input type="text" name="rentAmount" required></td>
+						<td><input type="number" name="rentAmount" required></td>
 					</tr>
 						<td>Credit Score</td>
 						<td>

@@ -60,7 +60,7 @@
 					</tr>
 					<tr>
 						<td>Address Line 2</td>
-						<td><input type="text" name="address2" required></td>
+						<td><input type="text" name="address2"></td>
 					</tr>
 					<tr>
 						<td>City</td>
@@ -72,7 +72,7 @@
 					</tr>
 					<tr>
 						<td>ZIP Code</td>
-						<td><input type="text" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+						<td><input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)"
 						 required></td>
 					</tr>
 					<tr>

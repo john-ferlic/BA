@@ -60,7 +60,7 @@
 					</tr>
 					<tr>
 						<td>Annual Income</td>
-						<td><input type="text" name="annualIncome" required></td>
+						<td><input type="number" name="annualIncome" required></td>
 					</tr>
 					<tr>
 						<td>House Rent/Own</td>
@@ -73,7 +73,7 @@
 					</tr>
 					<tr>
 						<td>Rent Lease/Amount</td>
-						<td><input type="text" name="amount" required></td>
+						<td><input type="number" name="amount" required></td>
 					</tr>
 						<td></td>
 						<td class="buttons">
