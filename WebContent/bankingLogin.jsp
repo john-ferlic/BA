@@ -35,7 +35,7 @@
 			<img src="C:\Users\644246\Desktop\bankaccount.png" alt="Bank Account"/>
 		</div>
 		<div id="rblock">
-			<form class="loginForm">
+			<form class="loginForm" method="post" action="LoginController">
 				<!-- User login info -->
 				<table id="loginTable">
 					<tr>
