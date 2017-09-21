@@ -35,7 +35,7 @@
 	</head>
 	<body>
 		<div id="lblock">
-			<img src="C:\Users\644246\Desktop\bankaccount.png" alt="Bank Account"/>
+			<img src="https://goo.gl/AFKHhg" width="25%" height="25%" alt="Bank Account"/>
 		</div>
 		<div id="rblock">
 			<h1>Eligibility Info</h1>
@@ -53,13 +53,13 @@
 					</tr>				
 					<tr>
 						<td>Initial Deposit</td>
-						<td><input type="text" name="deposit" required></td>
+						<td><input type="number" name="initialDeposit" required></td>
 					</tr>
 					<tr>
 						<td>Direct Deposit of $500 min monthly</td>
 						<td>
-							<input="radio" name="directDeposit" value="yes" required>Yes
-							<input="radio" name="directDeposit"value="no" required>No
+							  <input type="radio" name="directDeposit" value="Yes"> Yes
+							  <input type="radio" name="directDeposit" value="No"> No
 						</td>
 					</tr>
 						<td>Debit Card Type(VISA/Master/AMEX</td>
@@ -74,7 +74,7 @@
 					</tr>
 						<td>Loan Amount Required (in $)</td>
 						<td>
-							<select name="loan" required>
+							<select name="loanAmount" required>
 								<option value="5000">5000</option>
 								<option value="10000">10000</option>
 								<option value="15000">15000</option>
@@ -85,7 +85,7 @@
 					</tr>
 					<tr>
 						<td>Rent Lease/Amount</td>
-						<td><input type="text" name="amount" required></td>
+						<td><input type="number" name="rentAmount" required></td>
 					</tr>
 						<td>Credit Score</td>
 						<td>

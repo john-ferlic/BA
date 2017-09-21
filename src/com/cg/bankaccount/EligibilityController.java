@@ -1,39 +1,41 @@
 package com.cg.bankaccount;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class EligibilityController
- */
+
 public class EligibilityController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public EligibilityController() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+  
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		try {
+			User user = new User();
+			user.setfName(request.getParameter("accountType"));
+			user.setlName(request.getParameter("initialDeposit"));
+			user.setPassword(request.getParameter("directDeposit"));
+			user.setAddress(request.getParameter("card"));
+			user.setGender(request.getParameter("loanAmount"));
+			user.setCountry(request.getParameter("rentAmount"));
+			RegistrationBO registerBo = new RegistrationBO();
+			if (registerBo.registerUser(user)) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("success.jsp");
+				dispatcher.forward(request, response);
+			}
+		} catch(RegistrationBusinessException e) {
+			request.setAttribute("message", e.getMessage());
+			RequestDispatcher dispatcher = request.getRequestDispatcher("registration.jsp");
+			dispatcher.forward(request, response);
+		} catch(RegistrationException e) {
+			e.printStackTrace();
+			request.setAttribute("errMessage", "Fatal Error");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("registration.jsp");
+			dispatcher.forward(request, response);
+		}
 	}
 
 }

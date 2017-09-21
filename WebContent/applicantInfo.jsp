@@ -25,7 +25,7 @@
 				
 		h1
 		{
-			font-family: "Arial";
+			font-family:"Arial";
 		}
 	-->
 	</style>
@@ -35,7 +35,7 @@
 	</head>
 	<body>
 		<div id="lblock">
-			<img src="C:\Users\644246\Desktop\bankaccount.png" alt="Bank Account"/>
+			<img src="https://goo.gl/AFKHhg" width="25%" height="25%" alt="Bank Account"/>
 		</div>
 		<div id="rblock"> 
 			<h1>Applicant Info</h1>
@@ -60,7 +60,7 @@
 					</tr>
 					<tr>
 						<td>Address Line 2</td>
-						<td><input type="text" name="address2" required></td>
+						<td><input type="text" name="address2"></td>
 					</tr>
 					<tr>
 						<td>City</td>
@@ -72,7 +72,7 @@
 					</tr>
 					<tr>
 						<td>ZIP Code</td>
-						<td><input type="text" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+						<td><input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)"
 						 required></td>
 					</tr>
 					<tr>
